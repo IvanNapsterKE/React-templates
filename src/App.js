@@ -2,6 +2,8 @@ import React from 'react';
 
 import About from './components/About.jsx';
 import Contacts from './components/Contacts.jsx';
+import Errorpage from './components/404.jsx';
+import Feat from './components/Feat.jsx';
 import Footer from './components/Footer.jsx';
 import Homepage from './components/Homepage.jsx';
 import Logodesigns from './components/Logodesigns.jsx';
@@ -18,10 +20,12 @@ function App() {
       <About />
       <Logodesigns />
       <Products />
+      <Feat />
       <Services />
       <Quote/>
       <Contacts />
       <Footer />
+      <Errorpage />
     </div>
 
   );
