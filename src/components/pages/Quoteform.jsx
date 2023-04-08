@@ -7,7 +7,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-function Quote() {
+function Quoteform() {
     const [agreed, setAgreed] = useState(false)
     return (
       <div>
@@ -177,4 +177,4 @@ function Quote() {
     );
   }
   
-  export default Quote;
+  export default Quoteform;

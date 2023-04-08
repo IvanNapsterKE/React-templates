@@ -10,7 +10,7 @@ function Homepage() {
               <div class="w-full pb-6 space-y-6 sm:max-w-md lg:max-w-lg md:space-y-4 lg:space-y-8 xl:space-y-9 sm:pr-5 lg:pr-0 md:pb-0">
                 <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl">
                   <span class="block xl:inline">Useful Tools to</span>
-                  <span class="block text-indigo-600 xl:inline">
+                  <span class="block text-gray-600 xl:inline">
                     Help You Build Faster.
                   </span>
                 </h1>
@@ -21,7 +21,7 @@ function Homepage() {
                 <div class="relative flex flex-col sm:flex-row sm:space-x-4">
                   <a
                     href="#_"
-                    class="flex items-center w-full px-6 py-3 mb-3 text-lg text-white bg-indigo-600 rounded-md sm:mb-0 hover:bg-indigo-700 sm:w-auto"
+                    class="flex items-center w-full px-6 py-3 mb-3 text-lg text-white bg-gray-900 rounded-md sm:mb-0 hover:bg-gray-700 sm:w-auto"
                   >
                     Try It Free
                     <svg
@@ -40,7 +40,7 @@ function Homepage() {
                   </a>
                   <a
                     href="#_"
-                    class="flex items-center px-6 py-3 text-gray-500 bg-gray-100 rounded-md hover:bg-gray-200 hover:text-gray-600"
+                    class="flex items-center px-6 py-3 text-coolGray-900-500 bg-gray-100 rounded-md hover:bg-gray-200 hover:text-gray-600"
                   >
                     Learn More
                   </a>
