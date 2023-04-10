@@ -31,7 +31,7 @@ function Contacts() {
           transition
           ease-in-out
           m-0
-          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7"
+          focus:text-gray-700 focus:bg-white focus:border-gray-900 focus:outline-none" id="exampleInput7"
             placeholder="Name" />
         </div>
         <div class="form-group mb-6">
@@ -48,7 +48,7 @@ function Contacts() {
           transition
           ease-in-out
           m-0
-          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput8"
+          focus:text-gray-700 focus:bg-white focus:border-gray-900 focus:outline-none" id="exampleInput8"
             placeholder="Email address" />
         </div>
         <div class="form-group mb-6">
@@ -67,12 +67,12 @@ function Contacts() {
           transition
           ease-in-out
           m-0
-          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+          focus:text-gray-700 focus:bg-white focus:border-gray-900 focus:outline-none
         " id="exampleFormControlTextarea13" rows="3" placeholder="Message"></textarea>
         </div>
         <div class="form-group form-check text-center mb-6">
           <input type="checkbox"
-            class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
+            class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-gray-900 checked:border-gray-900 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
             id="exampleCheck87" checked />
           <label class="form-check-label inline-block text-gray-800" for="exampleCheck87">Send me a copy of this
             message</label>
@@ -81,7 +81,7 @@ function Contacts() {
         w-full
         px-6
         py-2.5
-        bg-blue-600
+        bg-gray-900
         text-white
         font-medium
         text-xs
@@ -102,7 +102,7 @@ function Contacts() {
         <div class="mb-12 grow-0 shrink-0 basis-auto w-full lg:w-6/12 px-3 lg:px-6">
           <div class="flex items-start">
             <div class="shrink-0">
-              <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+              <div class="p-4 bg-gray-900 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="headset" class="w-5 text-white"
                   role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                   <path fill="currentColor"
@@ -121,7 +121,7 @@ function Contacts() {
         <div class="mb-12 grow-0 shrink-0 basis-auto w-full lg:w-6/12 px-3 lg:px-6">
           <div class="flex items-start">
             <div class="shrink-0">
-              <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+              <div class="p-4 bg-gray-900 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dollar-sign"
                   class="w-3 text-white" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 512">
                   <path fill="currentColor"
@@ -140,7 +140,7 @@ function Contacts() {
         <div class="mb-12 grow-0 shrink-0 basis-auto w-full lg:w-6/12 px-3 lg:px-6">
           <div class="flex align-start">
             <div class="shrink-0">
-              <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+              <div class="p-4 bg-gray-900 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="newspaper"
                   class="w-5 text-white" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                   <path fill="currentColor"
@@ -159,7 +159,7 @@ function Contacts() {
         <div class="mb-12 grow-0 shrink-0 basis-auto w-full lg:w-6/12 px-3 lg:px-6">
           <div class="flex align-start">
             <div class="shrink-0">
-              <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+              <div class="p-4 bg-gray-900 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bug" class="w-5 text-white"
                   role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                   <path fill="currentColor"
