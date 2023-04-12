@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./components/main/About.jsx";
 import Cart from "./components/Shop/Cart.jsx";
 import Clients from "./components/pages/Clients.jsx";
@@ -19,21 +20,28 @@ import Quoteform from "./components/pages/Quoteform.jsx";
 function App() {
   return (
     <div>
+      <BrowserRouter>
       <Navbar />
-      <Homepage />
-      <About />
-      <Logodesigns />
-      <Shop />
-      <Products />
-      <Productcard/>
-      <Cart />
-      <Feat />
-      <Services />
-      <Quoteform />
-      <Contacts />
-      <Clients />
-      <Footer />
-      <Errorpage />
+
+      <Routes>
+      <Route path="/" element={<Homepage />} />
+      
+      <Route path="about" element={<About />} />
+      <Route path="logos" element={<Logodesigns />} />
+      <Route path="shop" element={<Shop />} />
+      <Route path="products" element ={<Products /> } />
+      <Route path="product" element ={<Productcard/>} />
+      <Route path="cart" element ={<Cart />} />
+      <Route path="feat" element ={<Feat />} />
+      <Route path="services" element ={<Services />} />
+      <Route path="quote" element ={<Quoteform />} />
+      <Route path="contacts" element ={<Contacts />} />
+      <Route path="clients" element ={<Clients />} />
+      <Route path="footer" element ={<Footer />} />
+      <Route path="404" element ={<Errorpage />} />
+      </Routes>
+
+      </BrowserRouter>
     </div>
   );
 }
