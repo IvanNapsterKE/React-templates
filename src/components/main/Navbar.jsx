@@ -1,74 +1,113 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+// import logoImage from "../asserts/images/logoImage.jpg";
 
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+import { Bars3Icon, XCircleIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 
-  const handleToggle = () => {
-    setIsOpen(!isOpen);
+
+
+
+
+
+function Navbar() {
+  const [menu, setMenu] = useState(false);
+  // function to display menu
+  const handleMenu = () => {
+    setMenu(!menu);
+  };
+
+   // function to make the navLinks disappear when clicked on the small screen
+   const handleNavLinkDisappear = () => {
+    setMenu(false);
   };
 
   return (
-    <nav className="flex items-center justify-between px-4 py-3 bg-gray-900">
-      <a href="/" className="text-xl font-bold text-white">
-        Logo
-      </a>
-      <button
-        className="block md:hidden text-white focus:outline-none"
-        onClick={handleToggle}
-      >
-        <svg
-          className="h-6 w-6 fill-current"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          {isOpen ? (
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M4.293 5.293a1 1 0 0 1 1.414-1.414L12 10.586l6.293-6.293a1 1 0 0 1 1.414 1.414l-7 7a1 1 0 0 1-1.414 0l-7-7z"
-            />
-          ) : (
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M4 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 5h16a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zm0 5h16a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2z"
-            />
+    
+      <div className="bg-black">
+        <nav className="w-full h-12 px-5 flex items-center justify-between md:w-4/5 md:mx-auto">
+          <div>
+            {/* <img src={logoImage} alt="logo" className="w-12 h-12" /> */}
+          </div>
+
+          <div className="text-2xl text-white md:hidden">
+            {menu === false ? (
+              <Bars3Icon class="h-6 w-6 text-gray-500" onClick={handleMenu} />
+            ) : (
+              <XCircleIcon class="h-6 w-6 text-gray-500" onClick={handleMenu} />
+            )}
+          </div>
+
+          {/* large screen */}
+          <nav className="hidden md:block md:container pl-10">
+          <div className="flex justify-between text-xl">
+              <div className="flex text-white space-x-4">
+              <Link to="/">
+                  <p className=''  >Home</p>
+                </Link>
+
+                <Link to="about">
+                  <p className=''>About us</p>
+                </Link>
+
+                <Link to="services">
+                  <p className=''>Services</p>
+                </Link>
+
+                <Link to="contacts">
+                  <p className='' >Contacts</p>
+                </Link>
+
+                <Link to="shop">
+                  <p className=''>Shop</p>
+                </Link>
+               
+              </div>
+              <div>
+              <Link to="quote">
+                  <p className=" capitalize bg-green-400 w-32 text-center rounded-md">
+                    Get Quote
+                  </p>
+                </Link>
+              </div>
+            </div>
+          </nav>
+        </nav>
+
+
+
+
+        {/* mobile screen */}
+        <nav className='md:hidden'>
+          {menu && (
+            <div className="text-xl border-t text-white mx-5">
+              <div className="space-y-6 py-4 ">
+              <Link to="/">
+                  <p className='' onClick={handleNavLinkDisappear} >Home</p>
+                </Link>
+
+                <Link to="about">
+                  <p className='mt-2' onClick={handleNavLinkDisappear}>About us</p>
+                </Link>
+                <Link to="shop">
+                  <p className='mt-2' onClick={handleNavLinkDisappear}>Shop</p>
+                </Link>
+                <Link to="services">
+                  <p className='mt-2' onClick={handleNavLinkDisappear}>Services</p>
+                </Link>
+                <Link to="contacts">
+                  <p className='mt-2'onClick={handleNavLinkDisappear} >Contacts</p>
+                </Link>
+                <Link to="quote">
+                  <p className="mt-4 capitalize bg-green-400 w-32 text-center rounded-md" onClick={handleNavLinkDisappear}>
+                    Get Quote
+                  </p>
+                </Link>
+              </div>
+            </div>
           )}
-        </svg>
-      </button>
-      <div
-        className={`${
-          isOpen ? 'block' : 'hidden'
-        } md:flex md:items-center md:w-auto`}
-      >
-        <ul className="pt-4 md:flex md:items-center">
-          <li>
-            <a
-              href="/"
-              className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400 mr-4"
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="/"
-              className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400 mr-4"
-            >
-              About
-            </a>
-          </li>
-          <li>
-            <a
-              href="/"
-              className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400"
-            >
-              Contact
-            </a>
-          </li>
-        </ul>
+        </nav>
       </div>
-    </nav>
+   
   );
 };
 

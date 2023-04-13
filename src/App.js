@@ -41,6 +41,7 @@ function App() {
       <Route path="404" element ={<Errorpage />} />
       </Routes>
 
+      <Footer />
       </BrowserRouter>
     </div>
   );
