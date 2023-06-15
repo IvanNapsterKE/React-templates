@@ -15,6 +15,7 @@ import Productcard from "./components/Shop/Product card.jsx";
 import Services from "./components/pages/Services.jsx";
 import Shop from "./components/Shop/Shop.jsx";
 import Quoteform from "./components/pages/Quoteform.jsx";
+import Test from "./components/main/Test.jsx";
 
 
 function App() {
@@ -37,10 +38,11 @@ function App() {
       <Route path="quote" element ={<Quoteform />} />
       <Route path="contacts" element ={<Contacts />} />
       <Route path="clients" element ={<Clients />} />
+      <Route path="test" element ={<Test/>} />
       <Route path="footer" element ={<Footer />} />
       <Route path="404" element ={<Errorpage />} />
       </Routes>
-
+      
       <Footer />
       </BrowserRouter>
     </div>

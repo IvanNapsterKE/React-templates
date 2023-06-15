@@ -4,10 +4,10 @@ function Contacts() {
     return (
   
       <div>
-        <div class="container my-24 px-6 mx-auto">
+        <div class="container my-10 px-6 mx-auto">
 
 {/* <!-- Section: Design Block --> */}
-<section class="mb-32 text-gray-800">
+<section class="mb-2 text-gray-800">
   <div class="flex justify-center">
     <div class="text-center lg:max-w-3xl md:max-w-xl">
       <h2 class="text-3xl font-bold mb-12 px-6">Contact us</h2>

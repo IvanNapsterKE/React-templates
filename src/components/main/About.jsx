@@ -2,12 +2,9 @@ import React from 'react';
 
 function About() {
     return (
-      <div>
-         <div>
-        
-         
-          <main>
-            <div className="relative pt-16 pb-32 flex content-center items-center justify-center" style={{minHeight: '75vh'}}>
+      <div  className='container mx-auto'>
+          <>
+            <div className=" relative flex content-center items-center justify-center" style={{minHeight: '75vh'}}>
               <div className="absolute top-0 w-full h-full bg-center bg-cover" style={{backgroundImage: 'url("https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80")'}}>
                 <span id="blackOverlay" className="w-full h-full absolute opacity-75 bg-black" />
               </div>
@@ -150,7 +147,7 @@ function About() {
                 </div>
               </div>
             </section>
-          </main>
+          </>
           <footer className="relative bg-gray-300 pt-8 pb-6">
             <div className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style={{height: '80px', transform: 'translateZ(0px)'}}>
               <svg className="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x={0} y={0}>
@@ -216,7 +213,7 @@ function About() {
              
             </div>
           </footer>
-        </div>
+        
       </div>
     );
   }

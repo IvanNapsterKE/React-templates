@@ -15,7 +15,7 @@ function Shop({ handleClick }) {
 
     <div>
        {/* shop header begins */}
-      <nav id="header" className="w-full z-30 top-0 py-1">
+      <nav id="header" className="w-full sticky top-10 z-50  bg-white">
         <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3">
           <label
             htmlFor="menu-toggle"

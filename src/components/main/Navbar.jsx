@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+
+
 // import logoImage from "../asserts/images/logoImage.jpg";
 
 import { Bars3Icon, XCircleIcon } from "@heroicons/react/24/outline";
@@ -22,9 +24,11 @@ function Navbar() {
   };
 
   return (
+
+
     
-      <div className="bg-black">
-        <nav className="w-full h-12 px-5 flex items-center justify-between md:w-4/5 md:mx-auto">
+      <div className="bg-black  sticky top-0 z-50">
+        <nav className="relative px-4 py-4 flex justify-between items-center bg-black">
           <div>
             {/* <img src={logoImage} alt="logo" className="w-12 h-12" /> */}
           </div>
@@ -42,23 +46,29 @@ function Navbar() {
           <div className="flex justify-between text-xl">
               <div className="flex text-white space-x-4">
               <Link to="/">
-                  <p className=''  >Home</p>
+                <a href="/" className= 'text-2xl font-bold leading-none'>Home</a>
+                  
                 </Link>
 
                 <Link to="about">
-                  <p className=''>About us</p>
+                <a href="About" className= 'text-2xl font-bold leading-none'>Why Us</a>
+                  
                 </Link>
 
                 <Link to="services">
-                  <p className=''>Services</p>
+                <a href="Services" className= 'text-2xl font-bold leading-none'>Services</a>
+                  
                 </Link>
 
                 <Link to="contacts">
-                  <p className='' >Contacts</p>
+                <a href="Contacts" className= 'text-2xl font-bold leading-none'>Contacts</a>
                 </Link>
 
                 <Link to="shop">
-                  <p className=''>Shop</p>
+                <a href="Shop" className= 'text-2xl font-bold leading-none'>Shop</a>
+                </Link>
+                <Link to="test">
+                <a href="Test" className= 'text-2xl font-bold leading-none'>Test</a>
                 </Link>
                
               </div>
